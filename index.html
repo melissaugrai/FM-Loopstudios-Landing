@@ -17,19 +17,35 @@
 
 <body>
   <!------------------- header ---------------------------------------->
-  <header>
+  <header id="header">
     <!-------- nav bar mobile ----------->
     <nav>
-      <a href="#" class="logo-design">Loopstudios</a>
-      <div class="nav-links">
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Events</a>
-        <a href="#">Products</a>
-        <a href="#">Support</a>
+      <a href="#" class="logo-design">
+        <img src="./images/logo.svg" alt="Loopstudios's Logo">
+      </a>
+      <div class="mobile-menu">
+        <img src="./images/icon-hamburger.svg" alt="Drop down menu">
+        <div class="mobile-nav-links">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <!-------- nav bar Desktop ----------->
+        <div class="desktop-nav-links">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <!-------- nav bar Desktop ----------->
     <!----------- hero section --------------->
     <div id="hero-section">
       <h1 class="hero-slogan">Immersive experiences that deliver</h1>
@@ -37,7 +53,7 @@
   </header>
 
   <!-------------------------- main ------------------------------->
-  <main>
+  <main id="main">
     <!------------ about section ----------->
     <div id="about-section">
       <img src="./images/mobile/image-interactive.jpg" alt="Man wearing a VR headset">
@@ -68,24 +84,28 @@
   </main>
 
   <!------------------------ footer ------------------------------>
-  <footer>
-    <a href="#" class="logo-design">Loopstudios</a>
-    <!------ footer links --------->
+  <footer id="footer">
+    <a href="#" class="logo-design">
+      <img src="./images/logo.svg" alt="Loopstudios's Logo">
+    </a>
+    <!------- links --------->
     <div class="foot-links">
-      <a href="#">About</a>
-      <a href="#">Careers</a>
-      <a href="#">Events</a>
-      <a href="#">Products</a>
-      <a href="#">Support</a>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
     </div>
-    <!-------- footer icons ------->
-    <div class="icons">
-      <i>Facebook</i>
-      <i>Twitter</i>
-      <i>Pinterest</i>
-      <i>Instagram</i>
+    <!-------- icons ------->
+    <div class="social-icons">
+      <img src="./images/icon-facebook.svg" alt="Facebook">
+      <img src="./images/icon-twitter.svg" alt="Twitter">
+      <img src="./images/icon-pinterest.svg" alt="Pinterest">
+      <img src="./images/icon-instagram.svg" alt="Instagram">
     </div>
-    <!-------- footer copy-write --------->
+    <!-------- copy-write --------->
     <div class="copywrite">
       <p>© 2021 Loopstudios. All rights reserved.</p>
     </div>

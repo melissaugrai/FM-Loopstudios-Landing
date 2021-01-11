@@ -1,38 +1,143 @@
 /* ================== Base Styles ======================*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* =================== header Styles =======================*/
+#header {
+  background-image: url(../images/mobile/image-hero.jpg);
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*^^^^^^^^^^^ nav bar^^^^^^^^^^^^^^^*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a img {
+  width: 144px;
+  height: 24px;
+  margin-left: 24px;
+  margin-top: 40px;
+}
+
+.mobile-menu {
+  margin-right: 24px;
+  margin-top: 24px;
+}
+
+/*^^^^^ mobile links ^^^^^^^*/
+.mobile-nav-links {
+  display: none;
+  background-color: #000000;
+  height: 667px;
+}
+
+.mobile-nav-links ul {
+  list-style-type: none;
+}
+
+.mobile-nav-links a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 25px;
+  text-decoration: none;
+  padding-bottom: 24px;
+  margin-left: 24px;
+}
+
+/*^^^^^ desktop links ^^^^^^^*/
+.desktop-nav-links {
+  display: none;
+}
+
+.desktop-nav-links a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 25px;
+  text-decoration: none;
+}
+
 /*^^^^^^^^^^^ hero section ^^^^^^^^^*/
+#hero-section {
+  border: 2px solid #ffffff;
+  margin: 163px 24px;
+}
 
-
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 38px;
+  padding: 24px;
+  font-weight: 300;
+}
 
 /* =================== main Styles =========================*/
 /*^^^^^^^^^^^ about section ^^^^^^^^^^^^^^^*/
 
 /*^^^^^^^^^^^ gallery section ^^^^^^^^^^^^^*/
+.deep-img {
+  background-image: url(../images/mobile/image-deep-earth.jpg);
+}
 
+.night-img {
+  background-image: url(../images/mobile/image-night-arcade.jpg);
+}
 
+.soccer-img {
+  background-image: url(../images/mobile/image-soccer-team.jpg);
+}
+
+.grid-img {
+  background-image: url(../images/mobile/image-grid.jpg);
+}
+
+.above-img {
+  background-image: url(../images/mobile/image-from-above.jpg);
+}
+
+.pocket-img {
+  background-image: url(../images/mobile/image-pocket-borealis.jpg);
+}
+
+.curiosity-img {
+  background-image: url(../images/mobile/image-curiosity.jpg);
+}
+
+.fisheye-img {
+  background-image: url(../images/mobile/image-fisheye.jpg);
+}
 
 /* =================== footer Styles ========================*/
+#footer {
+  background-color: #000000;
+}
+
 /*^^^^^^^^^^^ Links ^^^^^^^^^^^^^^^*/
 /*^^^^^^^^^^^ Icons ^^^^^^^^^^^^^^^*/
+
 /*^^^^^^^^^^^ Copy-Write ^^^^^^^^^^*/
 
 /*^^^^^^^^^^^ FM Properties ^^^^^^^*/
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
