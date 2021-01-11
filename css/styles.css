@@ -1,0 +1,38 @@
+/* ================== Base Styles ======================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* =================== header Styles =======================*/
+/*^^^^^^^^^^^ nav bar^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^ hero section ^^^^^^^^^*/
+
+
+
+/* =================== main Styles =========================*/
+/*^^^^^^^^^^^ about section ^^^^^^^^^^^^^^^*/
+
+/*^^^^^^^^^^^ gallery section ^^^^^^^^^^^^^*/
+
+
+
+/* =================== footer Styles ========================*/
+/*^^^^^^^^^^^ Links ^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^ Icons ^^^^^^^^^^^^^^^*/
+/*^^^^^^^^^^^ Copy-Write ^^^^^^^^^^*/
+
+/*^^^^^^^^^^^ FM Properties ^^^^^^^*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
