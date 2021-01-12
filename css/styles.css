@@ -88,54 +88,244 @@ h1 {
 
 /* =================== main Styles =========================*/
 /*^^^^^^^^^^^ about section ^^^^^^^^^^^^^^^*/
+#about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 96px 0;
+}
+
+#about-section img {
+  width: 87.2%;
+  margin-bottom: 48px;
+}
+
+#about-section .about-writeup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-section h2 {
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+#about-section p {
+  font-family: "Alata", san-serf;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  opacity: 0.5;
+  width: 77.4%;
+  mix-blend-mode: normal;
+}
 
 /*^^^^^^^^^^^ gallery section ^^^^^^^^^^^^^*/
+#gallery-section {
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+}
+
+#gallery-section h2 {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+#gallery-section .img-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+#gallery-section p {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 52px;
+  margin-left: 20px;
+}
+
+.deep-img,
+.fisheye-img,
+.above-img,
+.curiosity-img,
+.grid-img,
+.night-img,
+.soccer-img,
+.pocket-img {
+  width: 87.2%;
+  height: 120px;
+  margin-bottom: 24px;
+  background-size: cover;
+}
+
 .deep-img {
-  background-image: url(../images/mobile/image-deep-earth.jpg);
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      rgba(0, 0, 0, 0.601863) 100%
+    ),
+    url(../images/mobile/image-deep-earth.jpg);
 }
 
 .night-img {
-  background-image: url(../images/mobile/image-night-arcade.jpg);
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      rgba(0, 0, 0, 0.601863) 100%
+    ),
+    url(../images/mobile/image-night-arcade.jpg);
 }
 
 .soccer-img {
-  background-image: url(../images/mobile/image-soccer-team.jpg);
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      rgba(0, 0, 0, 0.601863) 100%
+    ),
+    url(../images/mobile/image-soccer-team.jpg);
 }
 
 .grid-img {
-  background-image: url(../images/mobile/image-grid.jpg);
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      rgba(0, 0, 0, 0.601863) 100%
+    ),
+    url(../images/mobile/image-grid.jpg);
 }
 
 .above-img {
-  background-image: url(../images/mobile/image-from-above.jpg);
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      rgba(0, 0, 0, 0.601863) 100%
+    ),
+    url(../images/mobile/image-from-above.jpg);
 }
 
 .pocket-img {
-  background-image: url(../images/mobile/image-pocket-borealis.jpg);
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      rgba(0, 0, 0, 0.601863) 100%
+    ),
+    url(../images/mobile/image-pocket-borealis.jpg);
 }
 
 .curiosity-img {
-  background-image: url(../images/mobile/image-curiosity.jpg);
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      rgba(0, 0, 0, 0.601863) 100%
+    ),
+    url(../images/mobile/image-curiosity.jpg);
 }
 
 .fisheye-img {
-  background-image: url(../images/mobile/image-fisheye.jpg);
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      rgba(0, 0, 0, 0.601863) 100%
+    ),
+    url(../images/mobile/image-fisheye.jpg);
+}
+
+#gallery-section .button {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  font-family: "Alata", san-serif;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 157px;
+  height: 40px;
+  align-self: center;
+}
+
+#gallery-section .button:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* =================== footer Styles ========================*/
 #footer {
   background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#footer .logo-design img {
+  width: 144px;
+  height: 24px;
+  margin-bottom: 32px;
+  margin-top: 56px;
 }
 
 /*^^^^^^^^^^^ Links ^^^^^^^^^^^^^^^*/
+
+#footer .foot-links ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 48px;
+}
+
+#footer li {
+  margin-bottom: 16px;
+}
+
+#footer .foot-links a {
+  font-family: "Alata", san-serif;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /*^^^^^^^^^^^ Icons ^^^^^^^^^^^^^^^*/
+#footer .social-icons {
+  display: flex;
+  width: 38.4%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
 
 /*^^^^^^^^^^^ Copy-Write ^^^^^^^^^^*/
+#footer .copywrite {
+  font-family: "Alata", san-serif;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  margin-bottom: 56px;
+}
 
 /*^^^^^^^^^^^ FM Properties ^^^^^^^*/
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .attribution a {
