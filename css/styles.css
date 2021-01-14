@@ -95,6 +95,10 @@ h1 {
   margin: 96px 0;
 }
 
+#about-section .desktop-size {
+  display: none;
+}
+
 #about-section img {
   width: 87.2%;
   margin-bottom: 48px;
@@ -281,6 +285,13 @@ h1 {
   margin-top: 56px;
 }
 
+#footer .desktop-align {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*^^^^^^^^^^^ Links ^^^^^^^^^^^^^^^*/
 
 #footer .foot-links ul {
@@ -330,4 +341,276 @@ h1 {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* =================== Media Queries ========================*/
+/*Desktop layout CSS*/
+@media only screen and (min-width: 768px) {
+  /*^^^^^^^^^^^ Header/Hero Section ^^^^^^^^^^^^^^^*/
+  #header {
+    background-image: url(../images/desktop/image-hero.jpg);
+  }
+
+  /*^^^^^^^^^^^ nav bar^^^^^^^^^^^^^^^*/
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav a img {
+    width: 192px;
+    height: 32px;
+  }
+
+  /*^^^^^ mobile links ^^^^^^^*/
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-ham {
+    display: none;
+  }
+
+  /*^^^^^ desktop links ^^^^^^^*/
+  .desktop-menu {
+    width: 34%;
+  }
+
+  .desktop-nav-links {
+    display: inline;
+  }
+
+  .desktop-nav-links ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .desktop-nav-links a {
+    color: #ffffff;
+    font-family: "Alata", sans-serif;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+  }
+
+  /*^^^^^Hero Section ^^^^^^^*/
+  #hero-section {
+    margin: 146px 165px;
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 72px;
+    line-height: 70px;
+    padding: 40px;
+  }
+
+  /*^^^^^^^^^^^ About section ^^^^^^^^^^^^^^^*/
+  #about-section {
+    flex-direction: row;
+    margin: 160px 165px;
+    align-items: flex-end;
+  }
+
+  #about-section .mobile-size {
+    display: none;
+  }
+
+  #about-section .desktop-size {
+    display: inline;
+  }
+
+  #about-section img {
+    width: 86%;
+    margin-bottom: 0;
+  }
+
+  #about-section .about-writeup {
+    display: inline;
+    background: #ffffff;
+    padding-left: 96px;
+    padding-top: 96px;
+    position: relative;
+    left: -161px;
+  }
+
+  #about-section h2 {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 25px;
+    text-align: left;
+    width: 445px;
+  }
+
+  #about-section p {
+    text-align: left;
+    width: 100%;
+  }
+
+  /*^^^^^^^^^^^ Gallery Section ^^^^^^^^^^^^^^^*/
+  #gallery-section {
+    margin: 24px 165px;
+    width: 77.4%;
+    flex-wrap: wrap;
+  }
+
+  #gallery-section h2 {
+    text-align: left;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 0;
+    order: 1;
+    width: 50%;
+  }
+
+  #gallery-section .img-gallery {
+    flex-flow: row wrap;
+    margin-bottom: 0px;
+    width: 100%;
+    justify-content: space-between;
+    order: 2;
+  }
+
+  #gallery-section p {
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-top: 354px;
+    margin-left: 40px;
+  }
+
+  .deep-img,
+  .fisheye-img,
+  .above-img,
+  .curiosity-img,
+  .grid-img,
+  .night-img,
+  .soccer-img,
+  .pocket-img {
+    width: 256px;
+    height: 450px;
+    margin-bottom: 30px;
+  }
+
+  .deep-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      ),
+      url(../images/desktop/image-deep-earth.jpg);
+  }
+
+  .night-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      ),
+      url(../images/desktop/image-night-arcade.jpg);
+  }
+
+  .soccer-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      ),
+      url(../images/desktop/image-soccer-team.jpg);
+  }
+
+  .grid-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      ),
+      url(../images/desktop/image-grid.jpg);
+  }
+
+  .above-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      ),
+      url(../images/desktop/image-from-above.jpg);
+  }
+
+  .pocket-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      ),
+      url(../images/desktop/image-pocket-borealis.jpg);
+  }
+
+  .curiosity-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      ),
+      url(../images/desktop/image-curiosity.jpg);
+  }
+
+  .fisheye-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%
+      ),
+      url(../images/desktop/image-fisheye.jpg);
+  }
+
+  #gallery-section .button {
+    align-self: flex-end;
+    order: 1;
+  }
+
+  /*^^^^^^^^^^^ Footer Section ^^^^^^^^^^^^^^^*/
+
+  #footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 44px 165px;
+  }
+
+  #footer .logo-design img {
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+
+  #footer .desktop-align {
+    align-items: flex-start;
+  }
+
+  /*^^^^^^^^^^^ Links ^^^^^^^^^^^^^^^*/
+
+  #footer .foot-links ul {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  #footer li {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  /*^^^^^^^^^^^ Icons ^^^^^^^^^^^^^^^*/
+  #footer .social-icons {
+    width: 53.1%;
+    margin-bottom: 14px;
+    align-self: flex-end;
+  }
+
+  /*^^^^^^^^^^^ Copy-Write ^^^^^^^^^^*/
+  #footer .copywrite {
+    margin-bottom: 0;
+  }
 }
