@@ -19,56 +19,105 @@ body {
 }
 
 /*^^^^^^^^^^^ nav bar^^^^^^^^^^^^^^^*/
-nav {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-top: 68px;
 }
 
-nav a img {
-  width: 144px;
-  height: 24px;
-  margin-left: 24px;
-  margin-top: 40px;
-}
-
-.mobile-menu {
-  margin-right: 24px;
-  margin-top: 24px;
-}
-
-/*^^^^^ mobile links ^^^^^^^*/
-.mobile-nav-links {
-  display: none;
-  background-color: #000000;
-  height: 667px;
-}
-
-.mobile-nav-links ul {
+ul {
   list-style-type: none;
+  padding: 0;
 }
 
-.mobile-nav-links a {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 25px;
+li {
+  display: inline-block;
+  padding-left: 33px;
+}
+
+li a {
+  color: #fff;
   text-decoration: none;
-  padding-bottom: 24px;
-  margin-left: 24px;
+  font-family: "Alata", san-serif;
 }
 
-/*^^^^^ desktop links ^^^^^^^*/
-.desktop-nav-links {
+li:hover a {
+  text-decoration: underline;
+}
+
+/* Mobile Toggle */
+
+.nav-toggle {
+  /*! display: none; */
+  /*! position: absolute; */
+  /*! right: 1rem; */
+  /*! top: 1.5rem; */
+  cursor: pointer;
+}
+
+.nav-toggle img {
+  width: 24px;
+  transition: 300ms all ease;
+}
+
+.nav-toggle:hover img {
+  opacity: 0.6;
+}
+
+.open {
+  height: 100vh;
+}
+
+.hidden {
   display: none;
 }
 
-.desktop-nav-links a {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 25px;
-  text-decoration: none;
+/* Mobile */
+@media all and (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    background-color: #000;
+    height: 650px;
+    justify-content: space-between;
+    padding-top: 40px;
+    align-content: center;
+  }
+
+  nav {
+    width: 100%;
+    overflow: hidden;
+    transition: 250ms height ease-in-out;
+  }
+
+  .mobile-align {
+    display: flex;
+    width: 86.7%;
+    justify-content: space-between;
+  }
+
+  li {
+    display: block;
+    padding-bottom: 24px;
+  }
+
+  li a {
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 25px;
+  }
+
+  .nav-toggle {
+    display: block;
+    width: 24px;
+    height: 16px;
+  }
+
+  ul {
+    margin-bottom: 223px;
+  }
 }
 
 /*^^^^^^^^^^^ hero section ^^^^^^^^^*/
@@ -176,74 +225,58 @@ h1 {
 }
 
 .deep-img {
-  background-image: linear-gradient(
-      270deg,
+  background-image: linear-gradient(270deg,
       rgba(0, 0, 0, 0.0001) 0%,
-      rgba(0, 0, 0, 0.601863) 100%
-    ),
+      rgba(0, 0, 0, 0.601863) 100%),
     url(../images/mobile/image-deep-earth.jpg);
 }
 
 .night-img {
-  background-image: linear-gradient(
-      270deg,
+  background-image: linear-gradient(270deg,
       rgba(0, 0, 0, 0.0001) 0%,
-      rgba(0, 0, 0, 0.601863) 100%
-    ),
+      rgba(0, 0, 0, 0.601863) 100%),
     url(../images/mobile/image-night-arcade.jpg);
 }
 
 .soccer-img {
-  background-image: linear-gradient(
-      270deg,
+  background-image: linear-gradient(270deg,
       rgba(0, 0, 0, 0.0001) 0%,
-      rgba(0, 0, 0, 0.601863) 100%
-    ),
+      rgba(0, 0, 0, 0.601863) 100%),
     url(../images/mobile/image-soccer-team.jpg);
 }
 
 .grid-img {
-  background-image: linear-gradient(
-      270deg,
+  background-image: linear-gradient(270deg,
       rgba(0, 0, 0, 0.0001) 0%,
-      rgba(0, 0, 0, 0.601863) 100%
-    ),
+      rgba(0, 0, 0, 0.601863) 100%),
     url(../images/mobile/image-grid.jpg);
 }
 
 .above-img {
-  background-image: linear-gradient(
-      270deg,
+  background-image: linear-gradient(270deg,
       rgba(0, 0, 0, 0.0001) 0%,
-      rgba(0, 0, 0, 0.601863) 100%
-    ),
+      rgba(0, 0, 0, 0.601863) 100%),
     url(../images/mobile/image-from-above.jpg);
 }
 
 .pocket-img {
-  background-image: linear-gradient(
-      270deg,
+  background-image: linear-gradient(270deg,
       rgba(0, 0, 0, 0.0001) 0%,
-      rgba(0, 0, 0, 0.601863) 100%
-    ),
+      rgba(0, 0, 0, 0.601863) 100%),
     url(../images/mobile/image-pocket-borealis.jpg);
 }
 
 .curiosity-img {
-  background-image: linear-gradient(
-      270deg,
+  background-image: linear-gradient(270deg,
       rgba(0, 0, 0, 0.0001) 0%,
-      rgba(0, 0, 0, 0.601863) 100%
-    ),
+      rgba(0, 0, 0, 0.601863) 100%),
     url(../images/mobile/image-curiosity.jpg);
 }
 
 .fisheye-img {
-  background-image: linear-gradient(
-      270deg,
+  background-image: linear-gradient(270deg,
       rgba(0, 0, 0, 0.0001) 0%,
-      rgba(0, 0, 0, 0.601863) 100%
-    ),
+      rgba(0, 0, 0, 0.601863) 100%),
     url(../images/mobile/image-fisheye.jpg);
 }
 
@@ -346,60 +379,24 @@ h1 {
 /* =================== Media Queries ========================*/
 /*Desktop layout CSS*/
 @media only screen and (min-width: 768px) {
+
   /*^^^^^^^^^^^ Header/Hero Section ^^^^^^^^^^^^^^^*/
   #header {
     background-image: url(../images/desktop/image-hero.jpg);
   }
 
   /*^^^^^^^^^^^ nav bar^^^^^^^^^^^^^^^*/
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .navbar {
+    width: 1110px;
   }
 
-  nav a img {
+  .navbar a img {
     width: 192px;
-    height: 32px;
-  }
-
-  /*^^^^^ mobile links ^^^^^^^*/
-
-  .mobile-menu {
-    display: none;
-  }
-
-  .mobile-ham {
-    display: none;
-  }
-
-  /*^^^^^ desktop links ^^^^^^^*/
-  .desktop-menu {
-    width: 34%;
-  }
-
-  .desktop-nav-links {
-    display: inline;
-  }
-
-  .desktop-nav-links ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-  }
-
-  .desktop-nav-links a {
-    color: #ffffff;
-    font-family: "Alata", sans-serif;
-    text-transform: capitalize;
-    font-size: 15px;
-    line-height: 25px;
-    text-decoration: none;
   }
 
   /*^^^^^Hero Section ^^^^^^^*/
   #hero-section {
-    margin: 146px 165px;
+    margin: 123px 165px;
     width: 45%;
   }
 
@@ -497,74 +494,58 @@ h1 {
   }
 
   .deep-img {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%
-      ),
+        rgba(0, 0, 0, 0.601863) 100%),
       url(../images/desktop/image-deep-earth.jpg);
   }
 
   .night-img {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%
-      ),
+        rgba(0, 0, 0, 0.601863) 100%),
       url(../images/desktop/image-night-arcade.jpg);
   }
 
   .soccer-img {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%
-      ),
+        rgba(0, 0, 0, 0.601863) 100%),
       url(../images/desktop/image-soccer-team.jpg);
   }
 
   .grid-img {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%
-      ),
+        rgba(0, 0, 0, 0.601863) 100%),
       url(../images/desktop/image-grid.jpg);
   }
 
   .above-img {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%
-      ),
+        rgba(0, 0, 0, 0.601863) 100%),
       url(../images/desktop/image-from-above.jpg);
   }
 
   .pocket-img {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%
-      ),
+        rgba(0, 0, 0, 0.601863) 100%),
       url(../images/desktop/image-pocket-borealis.jpg);
   }
 
   .curiosity-img {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%
-      ),
+        rgba(0, 0, 0, 0.601863) 100%),
       url(../images/desktop/image-curiosity.jpg);
   }
 
   .fisheye-img {
-    background-image: linear-gradient(
-        180deg,
+    background-image: linear-gradient(180deg,
         rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%
-      ),
+        rgba(0, 0, 0, 0.601863) 100%),
       url(../images/desktop/image-fisheye.jpg);
   }
 

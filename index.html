@@ -10,53 +10,45 @@
   <!-- Google Font links -->
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-  <!-- Style sheet Link -->
+  <!-- CSS Style sheet Link -->
   <link rel="stylesheet" href="./css/styles.css" type="text/css">
-
+  <!-- JS Script file -->
+  <script src="./js/script.js"></script>
 </head>
 
 <body>
-  <!------------------- header ---------------------------------------->
+  <!---------header ---------------------------------------->
   <header id="header">
-    <!-------- nav bar mobile ----------->
-    <nav>
-      <a href="#" class="logo-design">
+    <!-------- Responsive nav bar ----------->
+    <div class="container">
+      <div class="mobile-align">
         <img src="./images/logo.svg" alt="Loopstudios's Logo">
-      </a>
-      <div class="mobile-menu">
-        <img class="mobile-ham" src="./images/icon-hamburger.svg" alt="Drop down menu">
-        <div class="mobile-nav-links">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Support</a></li>
-          </ul>
+
+        <div class="nav-toggle" id="navToggle">
+          <img id="navClosed" class="navIcon" src="./images/icon-hamburger.svg" alt="hamburger menu">
+          <img id="navOpen" class="navIcon hidden" src="./images/icon-close.svg" alt="close hamburger">
         </div>
       </div>
-      <!-------- nav bar Desktop ----------->
-      <div class="desktop-menu">
-        <div class="desktop-nav-links">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Support</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+
+      <nav>
+        <ul>
+          <li><a class="menuLinks" href="#">About</a></li>
+          <li><a class="menuLinks" href="#">Careers</a></li>
+          <li><a class="menuLinks" href="#">Events</a></li>
+          <li><a class="menuLinks" href="#">Products</a></li>
+          <li><a class="menuLinks" href="#">Support</a></li>
+        </ul>
+      </nav>
+    </div>
     <!----------- hero section --------------->
     <div id="hero-section">
       <h1 class="hero-slogan">Immersive experiences that deliver</h1>
     </div>
   </header>
 
-  <!-------------------------- main ------------------------------->
+  <!------------main ------------------------------->
   <main id="main">
-    <!------------ about section ----------->
+    <!---------about section ----------->
     <div id="about-section">
       <img class="mobile-size" src="./images/mobile/image-interactive.jpg" alt="Man wearing a VR headset">
       <img class="desktop-size" src="./images/desktop/image-interactive.jpg" alt="Man wearing a VR headset">
@@ -99,12 +91,12 @@
         </div>
 
       </div>
-      <!------- button section --------->
+      <!-----button section --------->
       <button type="button" class="button">See all</button>
     </div>
   </main>
 
-  <!------------------------ footer ------------------------------>
+  <!-------------footer ------------------------------>
   <footer id="footer">
     <div class="desktop-align">
       <a href="#" class="logo-design">
@@ -135,7 +127,7 @@
       </div>
     </div>
 
-    <!-------- footer FM Properties-------->
+    <!-----footer FM Properties-------->
   </footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
