@@ -396,14 +396,13 @@ h1 {
 
   /*^^^^^Hero Section ^^^^^^^*/
   #hero-section {
-    margin: 123px 165px;
-    width: 45%;
-    margin-bottom: 146px;
+    margin: 130px auto 146px 165px;
+    width: 45.14%;
   }
 
   h1 {
     font-size: 72px;
-    line-height: 70px;
+    line-height: 66px;
     padding: 40px;
   }
 
@@ -411,8 +410,9 @@ h1 {
 
   #about-section {
     flex-direction: row;
-    margin: 160px 165px;
+    margin: 160px 164px;
     align-items: flex-end;
+    margin-bottom: 184px;
   }
 
   #about-section .mobile-size {
@@ -452,23 +452,21 @@ h1 {
 
   /*^^^^^^^^^^^ Gallery Section ^^^^^^^^^^^^^^^*/
   #gallery-section {
-    margin: 24px 165px;
-    width: 77.4%;
+    margin: 0 165px;
     flex-wrap: wrap;
-    margin-bottom: 154px;
+    margin-bottom: 120px;
   }
 
   #gallery-section h2 {
     text-align: left;
     font-size: 48px;
     line-height: 48px;
-    margin-bottom: 84px;
+    margin-bottom: 80px;
     order: 1;
   }
 
   #gallery-section .img-gallery {
     flex-flow: row wrap;
-    margin-bottom: 0px;
     width: 100%;
     justify-content: space-between;
     order: 2;
@@ -555,7 +553,6 @@ h1 {
     position: absolute;
     align-self: flex-end;
     order: 1;
-    
   }
 
   /*^^^^^^^^^^^ Footer Section ^^^^^^^^^^^^^^^*/
