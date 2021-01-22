@@ -1,29 +1,24 @@
-const navToggle = document.querySelector("#navToggle");
-const navClosedIcon = document.querySelector("#navClosed");
-const navOpenIcon = document.querySelector("#navOpen");
-const navIcon = document.querySelectorAll(".navIcon");
-const nav = document.querySelector("nav");
-
-function toggleHam() {
-    nav.classList.toggle("open");
-    navIcon.forEach((icon) => {
-        icon.classList.toggle("hidden");
-    });
-};
-
-navToggle.addEventListener("click", toggleHam);
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const logoPlacement = document.querySelector('.logoOnTop');
 
 
-window.addEventListener(
-    "resize", () => {
-        if (document.body.clientWidth > 720) {
-            nav.classList.remove("open");
-            navIcon.forEach((icon) => {
-                icon.classList.remove("hidden");
-            });
-            navOpenIcon.classList.add("hidden");
-        }
-    }, {
-        passive: false
-    }
-);
+// Hamburger Menu EventListeners 
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+mainMenu.addEventListener('click', close);
+logoPlacement.addEventListener('click', close);
+
+//Hamburger Menu function 
+function show() {
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+    logoPlacement.style.position = 'fixed';
+    logoPlacement.style.zIndex = '100';
+}
+
+function close() {
+    mainMenu.style.top = '-100%';
+    logoPlacement.style.position = 'static';
+}
