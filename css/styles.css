@@ -153,6 +153,10 @@ h1 {
   margin-bottom: 2.125rem;
 }
 
+#gallery-section .img-gallery a {
+  text-decoration: none;
+}
+
 #gallery-section .img-gallery a:hover {
   opacity: 0.7;
 }
@@ -286,7 +290,7 @@ h1 {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -315,7 +319,7 @@ h1 {
 }
 
 #footer .social-icons a {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 #footer .social-icons a:hover {
@@ -406,7 +410,7 @@ h1 {
 }
 
 /*Desktop layout CSS*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 62.5rem) {
 
   /*^^^^^^^^^^^ Header/Hero Section ^^^^^^^^^^^^^^^*/
   #header {
@@ -538,7 +542,10 @@ h1 {
   }
 
   .grid-img {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%), url(../images/desktop/image-grid.jpg);
+    background-image: linear-gradient(180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%),
+      url(../images/desktop/image-grid.jpg);
     margin-right: 0;
   }
 
@@ -564,7 +571,10 @@ h1 {
   }
 
   .fisheye-img {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%), url(../images/desktop/image-fisheye.jpg);
+    background-image: linear-gradient(180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.601863) 100%),
+      url(../images/desktop/image-fisheye.jpg);
     margin-right: 0;
   }
 
