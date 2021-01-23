@@ -11,8 +11,11 @@ body {
 
 /* =================== header Styles =======================*/
 #header {
-  background-image: url(../images/mobile/image-hero.jpg);
-  height: 650px;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 0%),
+    url(../images/mobile/image-hero.jpg);
+  height: 40.625rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,7 +24,7 @@ body {
 /*^^^^^^^^^^^ nav bar^^^^^^^^^^^^^^^*/
 /*^^^Desktop Nav bar Only Layout^^^*/
 .logo img {
-  width: 192px;
+  width: 12rem;
 }
 
 nav {
@@ -29,14 +32,14 @@ nav {
   color: white;
   display: flex;
   justify-content: space-between;
-  margin: 0 165px;
-  padding-top: 64px;
+  margin: 0 10.3125rem;
+  padding-top: 4rem;
 }
 
 nav .mainMenu {
   display: flex;
   list-style-type: none;
-  width: 380px;
+  width: 23.75rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -46,8 +49,8 @@ nav .mainMenu li a {
   font-family: "Alata", sans-serif;
   text-decoration: none;
   color: #fff;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   font-weight: normal;
 }
 
@@ -57,30 +60,30 @@ nav .mainMenu li a:hover {
 
 nav .openMenu {
   cursor: pointer;
-  font-size: 28px;
-  line-height: 25px;
+  font-size: 1.75rem;
+  line-height: 1.5625rem;
   display: none;
 }
 
 nav .mainMenu .closeMenu {
   cursor: pointer;
-  font-size: 28px;
-  line-height: 25px;
+  font-size: 1.75rem;
+  line-height: 1.5625rem;
   display: none;
 }
 
 /*^^^^^^^^^^^ hero section ^^^^^^^^^*/
 #hero-section {
-  border: 2px solid #ffffff;
-  margin: 163px 24px;
+  border: 0.125rem solid #ffffff;
+  margin: 10.1875rem 1.5rem;
 }
 
 h1 {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 40px;
-  line-height: 38px;
-  padding: 24px;
+  font-size: 2.5rem;
+  line-height: 2.375rem;
+  padding: 1.5rem;
   font-weight: 300;
 }
 
@@ -90,7 +93,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 96px 0;
+  margin: 6rem 0;
 }
 
 #about-section .desktop-size {
@@ -99,7 +102,7 @@ h1 {
 
 #about-section img {
   width: 87.2%;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 #about-section .about-writeup {
@@ -109,18 +112,18 @@ h1 {
 }
 
 #about-section h2 {
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 2rem;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   font-weight: 300;
 }
 
 #about-section p {
   font-family: "Alata", san-serf;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   text-align: center;
   opacity: 0.5;
   width: 77.4%;
@@ -129,34 +132,38 @@ h1 {
 
 /*^^^^^^^^^^^ gallery section ^^^^^^^^^^^^^*/
 #gallery-section {
-  margin-bottom: 96px;
+  margin-bottom: 6rem;
   display: flex;
   flex-direction: column;
 }
 
 #gallery-section h2 {
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 #gallery-section .img-gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
+}
+
+#gallery-section .img-gallery a:hover {
+  opacity: 0.7;
 }
 
 #gallery-section p {
   color: #ffffff;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   text-transform: uppercase;
-  margin-top: 52px;
-  margin-left: 20px;
+  margin-top: 3.25rem;
+  margin-left: 1.25rem;
 }
 
 .deep-img,
@@ -168,8 +175,8 @@ h1 {
 .soccer-img,
 .pocket-img {
   width: 87.2%;
-  height: 120px;
-  margin-bottom: 24px;
+  height: 7.5rem;
+  margin-bottom: 1.5rem;
   background-size: cover;
 }
 
@@ -231,16 +238,16 @@ h1 {
 
 #gallery-section .button {
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border: 0.0625rem solid #000000;
   font-family: "Alata", san-serif;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 5px;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.3125rem;
   text-transform: uppercase;
   transition-duration: 0.4s;
   cursor: pointer;
-  width: 157px;
-  height: 40px;
+  width: 9.8125rem;
+  height: 2.5rem;
   align-self: center;
 }
 
@@ -261,10 +268,9 @@ h1 {
 }
 
 #footer .logo-design img {
-  width: 144px;
-  height: 24px;
-  margin-bottom: 32px;
-  margin-top: 56px;
+  width: 9rem;
+  margin-bottom: 2rem;
+  margin-top: 3.5rem;
 }
 
 #footer .desktop-align {
@@ -281,41 +287,57 @@ h1 {
   flex-direction: column;
   list-style: none;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 #footer li {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 #footer .foot-links a {
   font-family: "Alata", san-serif;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   text-decoration: none;
   color: #ffffff;
+}
+
+#footer .foot-links a:hover {
+  text-decoration: underline;
 }
 
 /*^^^^^^^^^^^ Icons ^^^^^^^^^^^^^^^*/
 #footer .social-icons {
   display: flex;
-  width: 38.4%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+
+#footer .social-icons a {
+  margin-right: 16px;
+}
+
+#footer .social-icons a:hover {
+  text-decoration: underline;
+}
+
+#footer .social-icons .instagram {
+  margin-right: 0;
 }
 
 /*^^^^^^^^^^^ Copy-Write ^^^^^^^^^^*/
 #footer .copywrite {
   font-family: "Alata", san-serif;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   opacity: 0.5;
-  margin-bottom: 56px;
+  margin-bottom: 3.5rem;
 }
 
 /*^^^^^^^^^^^ FM Properties ^^^^^^^*/
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
   background-color: #000000;
   color: #ffffff;
@@ -328,14 +350,14 @@ h1 {
 /* =================== Media Queries ========================*/
 
 /*Mobile layout CSS Nav bar Only*/
-@media (max-width: 786px) {
+@media (max-width: 49.125rem) {
   nav {
-    margin: 0 24px;
-    padding-top: 40px;
+    margin: 0 1.5rem;
+    padding-top: 2.5rem;
   }
 
   .logo img {
-    width: 144px;
+    width: 9rem;
     display: block;
     position: sticky;
     z-index: 100;
@@ -357,25 +379,25 @@ h1 {
   }
 
   nav ul {
-    padding-top: 223px;
-    padding-left: 24px;
+    padding-top: 13.9375rem;
+    padding-left: 1.5rem;
   }
 
   nav .mainMenu li a {
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
-    font-size: 24px;
-    line-height: 25px;
+    font-size: 1.5rem;
+    line-height: 1.5625rem;
     font-weight: 300;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 
   nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
-    top: 40px;
-    right: 24px;
-    font-size: 30px;
+    top: 2.5rem;
+    right: 1.5rem;
+    font-size: 1.875rem;
   }
 
   nav .openMenu {
@@ -384,35 +406,36 @@ h1 {
 }
 
 /*Desktop layout CSS*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
 
   /*^^^^^^^^^^^ Header/Hero Section ^^^^^^^^^^^^^^^*/
   #header {
-    background-image: linear-gradient(270deg,
-        rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%),
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 0%),
       url(../images/desktop/image-hero.jpg);
   }
 
   /*^^^^^Hero Section ^^^^^^^*/
   #hero-section {
-    margin: 130px auto 146px 165px;
+    margin: 8.125rem auto 9.125rem 10.3125rem;
     width: 45.14%;
+    word-wrap: break-word;
   }
 
   h1 {
-    font-size: 72px;
-    line-height: 66px;
-    padding: 40px;
+    font-size: 4.5rem;
+    line-height: 4.125rem;
+    padding: 2.5rem;
   }
 
   /*^^^^^^^^^^^ About section ^^^^^^^^^^^^^^^*/
 
   #about-section {
     flex-direction: row;
-    margin: 160px 164px;
+    margin: 10rem 10.25rem;
     align-items: flex-end;
-    margin-bottom: 184px;
+    margin-bottom: 11.5rem;
   }
 
   #about-section .mobile-size {
@@ -431,18 +454,18 @@ h1 {
   #about-section .about-writeup {
     display: inline;
     background: #ffffff;
-    padding-left: 96px;
-    padding-top: 96px;
+    padding-left: 6rem;
+    padding-top: 6rem;
     position: relative;
-    left: -161px;
+    left: -10.0625rem;
   }
 
   #about-section h2 {
-    font-size: 48px;
-    line-height: 48px;
-    margin-bottom: 25px;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1.5625rem;
     text-align: left;
-    width: 445px;
+    width: 27.8125rem;
   }
 
   #about-section p {
@@ -452,32 +475,31 @@ h1 {
 
   /*^^^^^^^^^^^ Gallery Section ^^^^^^^^^^^^^^^*/
   #gallery-section {
-    margin: 0 165px;
+    margin: 0 10.3125rem;
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
   }
 
   #gallery-section h2 {
     text-align: left;
-    font-size: 48px;
-    line-height: 48px;
-    margin-bottom: 80px;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 5rem;
     order: 1;
   }
 
   #gallery-section .img-gallery {
     flex-flow: row wrap;
     width: 100%;
-    justify-content: space-between;
     order: 2;
   }
 
   #gallery-section p {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 2rem;
+    line-height: 2rem;
     text-transform: uppercase;
-    margin-top: 354px;
-    margin-left: 40px;
+    margin-top: 22.125rem;
+    margin-left: 2.5rem;
   }
 
   .deep-img,
@@ -488,9 +510,10 @@ h1 {
   .night-img,
   .soccer-img,
   .pocket-img {
-    width: 256px;
-    height: 450px;
-    margin-bottom: 30px;
+    height: 28.125rem;
+    margin-bottom: 1.875rem;
+    flex: 1 1 21%;
+    margin-right: 2.7%;
   }
 
   .deep-img {
@@ -515,10 +538,8 @@ h1 {
   }
 
   .grid-img {
-    background-image: linear-gradient(180deg,
-        rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%),
-      url(../images/desktop/image-grid.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%), url(../images/desktop/image-grid.jpg);
+    margin-right: 0;
   }
 
   .above-img {
@@ -543,10 +564,8 @@ h1 {
   }
 
   .fisheye-img {
-    background-image: linear-gradient(180deg,
-        rgba(0, 0, 0, 0.0001) 0%,
-        rgba(0, 0, 0, 0.601863) 100%),
-      url(../images/desktop/image-fisheye.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%), url(../images/desktop/image-fisheye.jpg);
+    margin-right: 0;
   }
 
   #gallery-section .button {
@@ -560,11 +579,11 @@ h1 {
   #footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 44px 165px;
+    padding: 2.75rem 10.3125rem;
   }
 
   #footer .logo-design img {
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
     margin-top: 0;
   }
 
@@ -581,13 +600,13 @@ h1 {
 
   #footer li {
     margin-bottom: 0;
-    margin-right: 32px;
+    margin-right: 2rem;
   }
 
   /*^^^^^^^^^^^ Icons ^^^^^^^^^^^^^^^*/
   #footer .social-icons {
     width: 53.1%;
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
     align-self: flex-end;
   }
 
